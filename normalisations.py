@@ -4,6 +4,7 @@
 
 import torch
 import torchvision
+from torchvision.transforms import v2
 
 # default resolutions to use if unspecified (may be modified externally)
 expectedHRes = 352
