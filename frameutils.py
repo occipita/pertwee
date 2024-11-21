@@ -1,6 +1,7 @@
 #
 # utilities for manipulating, finding, and loading frames
 #
+import torch
 
 def timestampToSeconds (tsStr, framerate):
   tsList = tsStr.split(":")
