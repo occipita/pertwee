@@ -22,10 +22,10 @@ def randomFrameTime (fps, limit):
   #print (f"limitInt={limitInt} frameInt={frameInt} frameTime={frameTime}")
   return frameTime
 
-def loadFrames (video, transitionTime, fps):
+def loadFrames (video, transitionTime, fps, startFramesBeforeTransition = 0, framesToMerge=[1]):
   """
   Load a group of frames from video around transitionTime seconds (converted to frames via the fps param).
-  Uses the global variables:
+  These parameters are not self-expanatory:
   * startFramesBeforeTransition (integer) to identify the number of frames to start prior to transitionTime
   * framesToMerge (a list of integers) to identify the number of frames to merge into each output frame
 
